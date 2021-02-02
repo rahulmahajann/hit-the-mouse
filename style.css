@@ -3,10 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
+    cursor: none;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-  }
 body{
     background-color: rgb(255, 166, 0);
     /* display: flex; */
@@ -76,6 +74,8 @@ body{
     position: absolute;
     height: 125px;
     z-index: 4;
+    transform: translate(-20px ,-50px);
+    pointer-events: none;
 }
 @keyframes move{
     from{
