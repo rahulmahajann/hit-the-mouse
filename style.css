@@ -7,8 +7,7 @@
 }
 body{
     background-color: rgb(255, 166, 0);
-    /* display: flex; */
-    color: rgba(0, 0, 0, 0.952);
+    color : white;
     justify-content: center;
 }
 .heading{
