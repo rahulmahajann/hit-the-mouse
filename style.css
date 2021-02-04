@@ -1,3 +1,4 @@
+/* restoring all the browser effects */
 *{
     margin: 0;
     padding: 0;
@@ -5,21 +6,26 @@
     font-family: 'Dancing Script', cursive;
     cursor: none;
 }
+
+/* setting up the bg-color , text-color and alignment to all body elements */
 body{
     background-color: rgb(255, 166, 0);
     color : white;
     justify-content: center;
 }
+
 .heading{
     font-size: 2em;
     margin: 1em 0;
     text-align: center;
 }
+
 .score{
     font-size: 1.3em;
     margin: 1em;
     text-align: center;
 }
+
 .holes{
     width: 600px;
     height: 400px;
@@ -27,11 +33,14 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
 .hole {
     flex: 1 0 33.33%;
     overflow: hidden;
     position: relative;
-}  
+}
+
+/* use of pseudo classes */
 .hole:after {
     display: block;
     background: url(hole.svg) bottom center no-repeat;
@@ -43,6 +52,7 @@ body{
     z-index: 20;
     bottom: -30px;
 }
+
 .rat{
     position: absolute;
     z-index: 10;
@@ -52,10 +62,12 @@ body{
     transform: translateX(-50%);
     animation: move 0.5s linear;
 }
+
 .buttons{
     margin: 3em 0 0 0;
     text-align: center;
 }
+
 .button{
     background-color: inherit;
     padding: 15px 45px;
@@ -66,9 +78,13 @@ body{
     font-weight:900;
     outline: none;
 }
+
+/* this is used because we want a single button at a time on the screen */
+/* this functionally is moreover controlled by JS */
 .stop{
     display: none;
 }
+
 .hammer img{
     position: absolute;
     height: 125px;
@@ -77,6 +93,9 @@ body{
     pointer-events: none;
     animation: marne_wale_effects 0.1s ease;
 }
+
+/* giving animation to our rat */
+
 @keyframes move{
     from{
        bottom: -60px; 
@@ -85,6 +104,9 @@ body{
         bottom: 0;
     }
 }
+
+/* giving effects to hammer when we hit on the rat */
+
 @keyframes marne_wale_effects{
     from{
         transform: rotate(0deg);
