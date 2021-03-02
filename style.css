@@ -9,7 +9,7 @@
 
 /* setting up the bg-color , text-color and alignment to all body elements */
 body{
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(225, 166, 0);
     color : white;
     justify-content: center;
 }
@@ -43,7 +43,7 @@ body{
 /* use of pseudo classes */
 .hole:after {
     display: block;
-    background: url(hole.svg) bottom center no-repeat;
+    background: url(https://media.geeksforgeeks.org/wp-content/uploads/20210302112038/hole2.png) bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
